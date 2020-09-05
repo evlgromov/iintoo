@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #EFF6FF;
+}
+
+.container {
+    width: 1170px;
+    position: relative;
+    margin: 0 auto;
+}
+.content {
+    margin: 50px 0 50px 0;
+    display: flex;
+}
+.content__logo {
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+}
+.content__image {
+    width: 50%;
+    float: left;
+}
+.form {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 50%;
+    float: right;
+    color: #2A4A5C;
+    padding: 50px;
+}
+.form__header {
+    margin: 50px 0 0 0;
+}
+.form__subheader {
+    margin: 17px 0 0 0;
+    color: #7B8A92;
+    font-weight: normal;
+}
+.form__register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 7px 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 220px;
+}
+.form__button {
+    margin: 50px 0 0 0;
+}
+.form__button_fb {
+    background-color: #255A9B;
+}
+.form__button_li {
+    background-color: #0076B6;
+}
+.button__icon {
+    height: 22px;
+    padding: 0 20px 0 0;
+}
+.form__or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 50px 0;
+}
+.form__or::before, .form__or::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #eeeeee;
+    width: 130px;
+    margin: 5px;
+    transform: translateY(1px);
+}
+.form__login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.form__input {
+    width: 220px;
+    display: block;
+    border: 1px solid #eee;
+    padding: 23px 0 7px 10px;
+    outline: none;
+}
+.form__input:focus {
+    border-left: 1px solid #3698FB;
+}
+.form__label {
+    padding: 3px 0 0 10px;
+    position: absolute;
+    font-size: 12px;
+    color: #afafaf;
+}
+.form__radio {
+    margin: 50px 0 0 0;
+}
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.radio__box {
+    position: relative;
+}
+.radio__label {
+    cursor: pointer;
+    padding: 0 5px 0 30px;
+}
+.radio__label::after {
+    content: '';
+    background-image: url("../img/info.svg");
+    display: block;
+    float: right;
+    height: 12px;
+    width: 12px;
+    margin: 3px 0 0 0;
+}
+.radio__input {
+    display: none;
+}
+.radio__radio-button {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #eeeeee;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+.radio__input:checked ~ .radio__label .radio__radio-button {
+    border: 4px solid #3698FB;
+}
+.form__hint {
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 5px;
+    color: #afafaf;
+    width: 50%;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 20px 0 #eee;
+    margin: 35px 0 0 0;
+}
+.form__checkbox-input {
+    display: none;
+}
+.form__checkbox-input:checked ~ .form__label_terms .form__checkbox::after {
+    opacity: 1;
+}
+.form__checkbox-input:checked ~ .form__label_terms .form__checkbox {
+    border: 1px solid #3698FB;
+}
+.form__checkbox {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #afafaf;
+    display: inline-block;
+    border-radius: 1px;
+    margin: 0 7px 0 0;
+    position: relative;
+}
+.form__checkbox::after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    border-radius: 1px;
+    background: #3698FB;
+    opacity: 0;
+}
+.form__label_terms {
+    padding: 0;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+}
+.form__link {
+    color: #3698FB;
+    outline: none;
+}
+.form__submit {
+    width: 220px;
+    height: 36px;
+    position: absolute;
+    bottom: 110px;
+    background: #3698FB;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+}
